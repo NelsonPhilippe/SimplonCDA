@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -52,3 +53,16 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 module.exports = app;
+=======
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+})
+>>>>>>> c12c13fe06aba954dc69afb9bb2a3fd37b6fdfb6
