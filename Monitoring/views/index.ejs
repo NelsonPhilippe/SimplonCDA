@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monitoring IOT Simplon CDA</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    </head>
+    <body>
+        <nav>
+            <h1>Monitoring IOT Simplon CDA</h1>
+        </nav>
+
+        <div id="wrapper">
+            <% data.forEach((result) => { %>
+
+                <div class="item">
+                    <h3><%= result.type %></h3>
+                    <ul>
+                        <li>Identifiant de l’appareil : <%= result.name %></li>
+                        <li>status : <%= result.status %></li>
+                        <% if(result.info !== undefined || null) { %>
+                            <li><%= result.info %></li>
+
+                        <% } %>
+                        <li>dernière vérification : <%= result.date %></li>
+                    </ul>
+                </div>
+
+            <% }) %>
+        </div>
+        <script src="./javascripts/carousel.js"></script>
+    </body>
+</html>

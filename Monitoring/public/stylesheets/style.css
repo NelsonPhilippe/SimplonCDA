@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body, html{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    background-color: #B8B8B8;
+}
+
+nav h1{
+    margin-left: 30px;
+    font-family: Roboto,  sans-serif;
+
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: 80%;
+
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+
+
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+}
+
+.container:after {
+    content: "";
+    clear: both;
+    display: table;
+    height: 30vh;
+}
+
+.item {
+    float: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60%;
+}
+
+.item li{
+    list-style: none;
+    font-family: Roboto, sans-serif;
+    margin: 5px;
+}
+
+.item ul{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.item_carousel{
+    padding: 10px;
+    background-color: #B8B8B8;
+    border: solid white 5px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: none;
+    background-color: #2C2B2E;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.slider-right{
+   right: 0;
+}
+
+
+.slider-left{
+    left: 0;
+}
+
+.slider-right:after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-top: white solid 4px;
+    border-right: white solid 4px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-70%, -50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+.slider-left:after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-top: white solid 4px;
+    border-left: white solid 4px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-30%, -50%) rotate(-45deg);
+    border-radius: 2px;
+}
+
+.invisible{
+    display: none;
+}
+
