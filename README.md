@@ -23,5 +23,5 @@ La liste des tâches effectué : https://trello.com/b/q8UyfE6E/simplon-selection
 
 ### Choix des technologies
 
-Java : Simule les différents IOT ( Commun en entreprise ) 
-ExpressJS : Rapide pour faire du back end et du front
+- Java : Simule les différents IOT ( Commun en entreprise ) 
+- ExpressJS : Rapide pour faire du back end et du front
